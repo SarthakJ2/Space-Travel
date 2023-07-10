@@ -1,0 +1,409 @@
+/* Laptops 1440px */
+@media(max-width: 90rem){
+    #home-body{
+        background:hsl(var(--clr-dark)) url("./assets/home/background-home-desktop.jpg");
+        line-height: 2;
+    }
+    
+    #destination-body{
+       background: hsl(var(--clr-dark)) url("./assets/destination/background-destination-desktop.jpg");
+    }
+    
+    #crew-body{
+        background:hsl(var(--clr-dark)) url("./assets/crew/background-crew-desktop.jpg");
+    }
+    
+    #technology-body{
+        background:hsl(var(--clr-dark)) url("./assets/technology/background-technology-desktop.jpg");
+    }
+
+    .numbered-heading{
+        font-size: 2rem;
+        margin: 1.8rem 0 4rem 1.2rem;
+    }
+
+    .nav{
+        padding-right: 20%;
+    }
+
+    .tech-container{
+        column-gap: 2rem;
+    }
+
+    .tech-left{
+        padding-right: 1rem;
+    }
+
+    #tech{
+        padding: 4rem 4rem;
+    }
+
+    #crew{
+        padding: 4rem;
+        gap: 0rem;
+        align-items: center;
+    }
+
+    .crew-img{
+        width: 100%;
+    }
+
+    .crew-left{
+        padding-left: 3rem;
+    }
+
+    .crew-left .numbered-heading{
+        margin-top: 0;
+    }
+}
+
+/* Tablets 834x1194 */
+@media(max-width: 52.125em){
+    body{
+        overflow: scroll;
+    }
+
+    #home-body{
+        background:hsl(var(--clr-dark)) url("./assets/home/background-home-tablet.jpg");
+        line-height: 2;
+    }
+    
+    #destination-body{
+       background: hsl(var(--clr-dark)) url("./assets/destination/background-destination-tablet.jpg");
+    }
+    
+    #crew-body{
+        background:hsl(var(--clr-dark)) url("./assets/crew/background-crew-tablet.jpg");
+    }
+    
+    #technology-body{
+        background:hsl(var(--clr-dark)) url("./assets/technology/background-technology-tablet.jpg");
+    }
+
+    .two-cols{
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hidden-sm {
+        display: none !important; 
+    }
+
+    .show-sm {
+        display: block !important; 
+    }
+
+    /* NAVIGATION */
+    header .line-style{
+        display: none;
+    }
+
+    .nav{
+        padding: 0 2rem;
+    }
+    
+    /* HOME */
+    .home-container{
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 5rem 8rem;
+        padding-bottom: 0;
+        gap: 4rem;
+    }
+
+    .home-text{
+        justify-self: center;
+        align-self: center;
+    }
+    .primary-span{
+        font-size: 9rem;
+        font-weight : 500
+    }
+
+    /* DESTINATION */
+    .numbered-heading{
+        margin: 1rem;
+    }
+
+    
+    .destination-content{
+        margin-top: 0rem;
+        height: 75vh;
+    }
+
+    .destination-image{
+        width: 50%;
+    }
+
+    .destination-right{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destination-right .line-style{
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .destination-info{
+        padding: 0 2rem;
+        margin: 1rem 0;
+    }
+
+    .journey-details{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* CREW */
+    #crew{
+        padding-top: 2rem;
+        padding-bottom: 0;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
+
+    .crew-left{
+        /* padding: 0 4rem; */
+        margin: 2rem 0;
+        padding: 0 4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crew-right{
+        padding: 0;
+        text-align: center;
+    }
+
+    .crew-img{
+        width: 65%;
+    }
+
+    /* TECH */
+    .mobile{
+        display: block;
+    }
+
+    #tech{
+        padding: 4rem 0;
+    }
+
+    .tech-container{
+        height: 75vh;
+        grid-template-rows: auto auto 1fr;
+        padding: 0;
+        gap: 1.5rem;
+        align-content: center;
+    }
+
+    .tech-container .numbered-heading{
+        margin-top: -1rem;
+        margin-left: 4rem;
+    }
+
+    .tech-left{
+        grid-row: 3;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 4rem;
+    }
+
+    .tech-right{
+        margin-top: 2rem;
+        justify-self: stretch;
+    }
+    
+    .tech-info{
+        padding: 0;
+    }
+
+    .small-buttons{
+        flex-direction: row;
+    }
+}
+
+/* PHONES 630px */
+@media(max-width: 39.375em){
+    html{
+        font-size: 75%
+    }
+
+    #home-body{
+        background:hsl(var(--clr-dark)) url("./assets/home/background-home-mobile.jpg");
+        line-height: 2;
+    } 
+    
+    #crew-body{
+        background:hsl(var(--clr-dark)) url("./assets/crew/background-crew-mobile.jpg");
+    }
+
+    /* MOBILE NAVIGATION */
+    .logo{
+        width: 3.5rem;
+    }
+
+    .nav-container{
+        padding: 2rem 4rem;
+        margin-top: 1rem ;
+    }
+
+    #navbar .nav{
+        line-height: 1.4;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        z-index: 1;
+        font-size: 2rem;
+        position:fixed;
+        inset: 0 0 0 20%;
+        background: hsl( var(--clr-white)/0.05);
+        padding: 8rem 0 0 3rem;
+        backdrop-filter: blur(1rem);
+        -moz-backdrop-filter: blur(1rem);
+
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    #navbar .nav-list{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    #navbar .nav.mobile-nav-open{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+        transform: translateX(0);
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .underline-indicators > *{
+        border: none;
+        padding: 0;
+    }
+
+    /* HOME PAGE */
+    .home-container{
+        height: 80vh;
+        padding: 4rem;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .large-button{
+        align-self: end;
+    }
+
+    .info-text{
+        font-size: 1.3rem;
+    }
+
+    .primary-heading{
+        margin-bottom: 0;
+    }
+    
+    .primary-span{
+        line-height: 1.4;
+        font-size: 8rem; 
+        padding: 0;
+    }
+
+    /* DESTINATION */
+    #destination{
+        padding: 2rem;
+        padding-top: 1rem;
+        justify-content: center;
+    }
+
+    .destination-content{
+        height: 75vh;
+    }
+
+    #destination .line-style{
+        width: 100%;
+    }
+
+    .destination-right{
+        margin-top: -4rem;
+    }
+
+    .numbered-heading{
+        text-align: center;
+        margin: 0;
+    }
+
+    /* CREW */
+    #crew .numbered-heading{
+        justify-self: center;
+    }
+
+    #crew{
+        height: 80vh;
+        padding-top: 0;
+        gap: 4rem;
+        grid-template-rows: auto 1fr 1fr;
+    }
+
+    .crew-left{
+        padding: 0;
+        margin: 0;
+        align-self: start;
+        padding-bottom: 2rem;
+    }
+
+    .dot-indicators{
+        order: -1;
+        margin-bottom: 1rem;
+    }
+
+    .crew-right{
+        grid-row: 2;
+        align-self: center;
+    }
+
+    .commander-name span{
+        font-size: 3rem;
+    }
+
+    .crew-right .line-style{
+        width: 100%;
+    }
+
+    /* TECH */
+    #tech .numbered-heading{
+        text-align: center;
+        margin: 0;
+    }
+
+    #tech{
+        padding-top: 0;
+    }
+
+    .tech-right{
+        margin-top: 4rem;
+    }
+}
+
+@media(max-width: 24.875em){
+    html{
+        font-size: 62.5%;
+    }
+}
+
+/* HIDING LANDSCAPE IMAGES FOR BIGGER SCREEN SIZES */
+@media(min-width: 52.125em){
+    .hidden-pc{
+        display: none;
+    }
+}
