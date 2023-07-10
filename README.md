@@ -21,7 +21,7 @@ Users should be able to:
 ![](./assets/screenshots/ss4.png)
 
 ### Links
-- Live Site URL: https://anshul-g.github.io/SpaceTravel/
+- Live Site URL: https://sarthakj2.github.io/Space-Travel/
 
 ### Built with
 
